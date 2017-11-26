@@ -11,7 +11,7 @@ class Books extends Component{
   
   render(){
 	  const { books, shelveChange } = this.props
-	  const thumbnail = books.imageLinks.thumbnail
+	  const thumbnail = books.imageLinks ? books.imageLinks.thumbnail : ''
 	  const title = books.title
 	  const author = (books.author || [])[0]
 	  
