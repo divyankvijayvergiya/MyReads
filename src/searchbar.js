@@ -12,8 +12,6 @@ class SearchBar extends Component{
 	render(){
 		const { search }= this.props
 		
-	
-	
 	return(
 		<div className= "search-books-bar">
 			<Link to= "/" className="close-search">Close</Link>

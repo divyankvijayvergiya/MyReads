@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 class  ShelfChanger extends Component{
 	static PropTypes={
 		books: PropTypes.object.isRequired,
-		shelveChange: PropTypes.fun.isRequired
+		shelveChange: PropTypes.func.isRequired
 	} 	
 	handleChange =(event) => this.props.shelveChange(this.props.books, event.target.value)
 	

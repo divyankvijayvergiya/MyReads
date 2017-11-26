@@ -26,7 +26,7 @@ class BooksApp extends React.Component {
 	
     shelveChange= (books, shelfSlug)=> BooksAPI.update(books, shelfSlug).then(this.refreshBooks)
 
-    refreshBooks= ()=> BooksAPI.getAll.then(bookss=> this.setState({bookss}))
+    refreshBooks = () => BooksAPI.getAll().then(bookss => this.setState({bookss}))
 	
 	currentShelf= (bookId) =>{
 		const bookOnShelf= this.findBookOnShelf(bookId)
