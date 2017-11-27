@@ -15,7 +15,7 @@ class ListBooks extends Component{
 		
 		return(
 		 <ol className="books-grid">
-		    {bookss.map((book, i) => <BookItems key={i} bookss={bookss} shelveChange={shelveChange} />)}
+		    {bookss.map((books, i) => <BookItems key={i} books={books} shelveChange={shelveChange} />)}
 
 		 </ol>
 		)
